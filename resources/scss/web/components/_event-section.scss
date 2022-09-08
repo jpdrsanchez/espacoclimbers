@@ -1,0 +1,45 @@
+.event-section {
+  padding-bottom: 60px;
+  padding-top: 180px;
+
+  &--right {
+    background: var(--white-two);
+  }
+
+  &__wrapper {
+    background: var(--bg-one);
+    padding-bottom: 60px;
+    padding-top: 60px;
+    position: relative;
+  }
+
+  &__content {
+    max-width: 646px;
+
+    &--right {
+      margin-left: auto;
+    }
+  }
+
+  &__title {
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+  }
+
+  &__photo {
+    bottom: 88px;
+    height: 640px;
+    position: absolute;
+    right: 0;
+    width: 717px;
+
+    &--right {
+      left: 0;
+      right: unset;
+    }
+  }
+}

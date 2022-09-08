@@ -1,4 +1,4 @@
-import {defineConfig} from 'vite'
+import { defineConfig } from 'vite'
 import laravel from 'laravel-vite-plugin'
 import * as path from 'path'
 import * as os from 'os'
@@ -44,11 +44,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
-      '@fontsource/montserrat': path.resolve(
-        __dirname,
-        'node_modules/@fontsource/montserrat'
-      )
+      '@bootstrap': path.resolve(__dirname, 'node_modules/bootstrap')
     }
   },
   server
