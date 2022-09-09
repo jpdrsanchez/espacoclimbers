@@ -21,10 +21,17 @@ import '@fontsource/montserrat/900.css'
 import '@fontsource/montserrat/900-italic.css'
 import Alpine from 'alpinejs'
 
-import { eventsSwiper } from './modules/swiper'
+import { eventsSwiper, homeGastronomySwiper, homePartnersSwiper } from './modules/swiper'
 
 window.Alpine = Alpine
 
 Alpine.start()
 
-Alpine.store('eventSlide', eventsSwiper)
+Alpine.store('slides', {
+  eventPrev: () => eventsSwiper.slidePrev(500),
+  eventNext: () => eventsSwiper.slideNext(500),
+  gastronomyPrev: () => homeGastronomySwiper.slidePrev(500),
+  gastronomyNext: () => homeGastronomySwiper.slideNext(500),
+  partnersNext: () => homePartnersSwiper.slideNext(500),
+  partnersPrev: () => homePartnersSwiper.slidePrev(500)
+})

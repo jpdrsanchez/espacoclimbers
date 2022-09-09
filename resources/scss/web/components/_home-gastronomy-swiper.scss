@@ -1,0 +1,58 @@
+.home-gastronomy-swiper {
+  height: 314px !important;
+  width: 250px !important;
+
+  @media (min-width: 768px) {
+    height: 640px !important;
+    width: 510px !important;
+  }
+
+  @media (min-width: 992px) {
+    height: 364px !important;
+    width: 290px !important;
+  }
+
+  @media (min-width: 1200px) {
+    height: 439px !important;
+    width: 350px !important;
+  }
+
+  @media (min-width: 1600px) {
+    height: 640px !important;
+    width: 510px !important;
+  }
+
+  &__item {
+    border-radius: 10px;
+    height: 314px !important;
+    overflow: hidden;
+    width: 250px !important;
+
+    @media (min-width: 768px) {
+      height: 640px !important;
+      width: 510px !important;
+    }
+
+    @media (min-width: 992px) {
+      height: 364px !important;
+      width: 290px !important;
+    }
+
+    @media (min-width: 1200px) {
+      height: 439px !important;
+      width: 350px !important;
+    }
+
+    @media (min-width: 1600px) {
+      height: 640px !important;
+      width: 510px !important;
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+    }
+  }
+}

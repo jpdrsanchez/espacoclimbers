@@ -12,7 +12,17 @@
 @use "components/page-cover";
 @use "components/event-section";
 @use "components/page-cta";
+@use "components/gastronomy-swiper";
+@use "components/home-gastronomy-swiper";
+@use "components/home-partners-swiper";
+@use 'components/header';
+@use 'components/footer';
 
 // Pages
 @use "pages/home";
 @use "pages/about";
+@use "pages/gallery";
+@use "pages/gastronomy";
+@use "pages/localization";
+@use "pages/contact";
+@use "pages/customers";

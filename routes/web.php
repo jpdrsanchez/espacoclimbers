@@ -21,11 +21,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', HomeTemplate::class)->name('home');
-Route::get('/nosso-espaco', AboutTemplate::class)->name('space');
-Route::get('/eventos', EventsTemplate::class)->name('events');
-Route::get('/galeria', GalleryTemplate::class)->name('gallery');
-Route::get('/gastronomia', GastronomyTemplate::class)->name('gastronomy');
-Route::get('/cozinha', KitchenTemplate::class)->name('kitchen');
-Route::get('/localizacao', LocalizationTemplate::class)->name('localization');
-Route::get('/contato', ContactTemplate::class)->name('contact');
+Route::name('web.')->group(function () {
+    Route::get('/', HomeTemplate::class)->name('home');
+    Route::get('/nosso-espaco', AboutTemplate::class)->name('spaces');
+    Route::get('/eventos', EventsTemplate::class)->name('events');
+    Route::get('/galeria', GalleryTemplate::class)->name('gallery');
+    Route::get('/gastronomia', GastronomyTemplate::class)->name('gastronomy');
+    Route::get('/cozinha', KitchenTemplate::class)->name('kitchen');
+    Route::get('/localizacao', LocalizationTemplate::class)->name('localization');
+    Route::get('/contato', ContactTemplate::class)->name('contact');
+});

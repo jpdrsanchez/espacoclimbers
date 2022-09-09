@@ -1,0 +1,18 @@
+.gastronomy-swiper {
+  height: 100%;
+  width: 100%;
+
+  &__item {
+    height: 521px !important;
+    position: relative;
+    width: 358px !important;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+    }
+  }
+}
+

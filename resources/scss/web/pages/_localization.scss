@@ -1,0 +1,23 @@
+.localization {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  &__map {
+    height: 556px;
+    margin: 0 auto 60px;
+    max-width: 1260px;
+  }
+
+  &__address {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+
+    @media (min-width: 575px) {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+  }
+}

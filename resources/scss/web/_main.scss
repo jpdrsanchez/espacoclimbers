@@ -1,5 +1,6 @@
 :root {
   --black: #000;
+  --gray: #bdbdbd;
   --text: "Montserrat", sans-serif;
   --title: quesha, sans-serif;
   --white: #fff;
@@ -26,6 +27,10 @@ body {
   font-family: var(--text);
   font-size: 1rem;
   font-weight: 400;
+
+  &.overflow-hidden {
+    overflow: hidden;
+  }
 }
 
 a {
@@ -140,6 +145,11 @@ strong, b {
   }
 
   &--center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: 575px) {
     margin-left: auto;
     margin-right: auto;
   }

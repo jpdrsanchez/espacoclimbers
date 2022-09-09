@@ -1,0 +1,18 @@
+.home-partners-swiper {
+  &__item {
+    align-items: center !important;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+    display: flex !important;
+    height: 137px !important;
+    justify-content: center !important;
+    padding: 15px;
+    position: relative;
+    width: 137px !important;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
